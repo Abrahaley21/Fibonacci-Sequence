@@ -1,0 +1,14 @@
+//Fibonacci Sequence
+
+function Fib(num){
+    let seq=1
+    let seq1=0
+    let seq2=0
+    for(i=2;i<=num;i++){
+        seq2=seq1
+        seq1=seq
+        seq=seq1+seq2
+    }
+    return seq
+}
+console.log(Fib(4))
